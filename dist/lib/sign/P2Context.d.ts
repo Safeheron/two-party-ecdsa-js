@@ -1,0 +1,32 @@
+import * as BN from "bn.js";
+import { PailPubKey } from '@safeheron/crypto-paillier';
+import { Secp256k1SchnorrProof } from "@safeheron/crypto-zkp";
+import { Message1 } from "./message1";
+import { Message2 } from "./message2";
+import { Message3 } from "./message3";
+import { Message4 } from "./message4";
+import { KeyShare2 } from "../keyGen";
+declare type TCurvePoint = any;
+export declare class P2Context {
+    private expectedStep;
+    keyShare2: KeyShare2;
+    m: BN;
+    pailPubKey: PailPubKey;
+    k2: BN;
+    k2Inv: BN;
+    R2: TCurvePoint;
+    R: TCurvePoint;
+    cypher_x1: BN;
+    proof_R2: Secp256k1SchnorrProof;
+    rho: BN;
+    r_tilde: BN;
+    message1: Message1;
+    message2: Message2;
+    message3: Message3;
+    message4: Message4;
+    constructor(keyShare2: KeyShare2, m: BN, k2: BN, R2: TCurvePoint, proof_R2: Secp256k1SchnorrProof, rho: BN, r_tilde: BN);
+    static createContext(keyShare2Json: string, m: BN): Promise<P2Context>;
+    step1(message1Bytes: Uint8Array): Uint8Array;
+    step2(message3Bytes: Uint8Array): Uint8Array;
+}
+export {};

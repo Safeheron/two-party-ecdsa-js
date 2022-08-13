@@ -1,0 +1,66 @@
+{
+  "name": "@safeheron/two-party-ecdsa-js",
+  "version": "1.0.0",
+  "description": "Two party ecdsa protocol",
+  "keywords": [
+    "Two party",
+    "Ecdsa"
+  ],
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "homepage": "https://github.com/safeheron/two-party-ecdsa-js",
+  "bugs": {
+    "url": "https://github.com/safeheron/two-party-ecdsa-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:safeheron/two-party-ecdsa-js"
+  },
+  "license": "Apache 2.0",
+  "author": "Max<hejh1500@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": {
+    "buffer": false
+  },
+  "scripts": {
+    "lint": "standardx",
+    "prepublish": "npm run build",
+    "build": "rm -fr ./dist && tsc -p tsconfig.json",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.0",
+    "@types/elliptic": "^6.4.14",
+    "@types/mocha": "^9.1.1",
+    "babel-eslint": "^10.0.3",
+    "mocha": "^9.2.2",
+    "standardx": "^5.0.0",
+    "ts-node": "^10.7.0"
+  },
+  "dependencies": {
+    "@safeheron/crypto-commitment": "^0.1.2",
+    "@safeheron/crypto-paillier": "^0.9.0",
+    "@safeheron/crypto-rand": "^1.0.2",
+    "@safeheron/crypto-utils": "^1.0.0",
+    "@safeheron/crypto-zkp": "^1.0.3",
+    "assert": "^2.0.0",
+    "bn.js": "^5.2.1",
+    "bs58check": "^2.1.2",
+    "crypto-js": "3.3.0",
+    "elliptic": "^6.5.3",
+    "hash.js": "^1.1.7",
+    "protobufjs": "^6.11.3",
+    "typescript": "^4.0.5"
+  },
+  "standardx": {
+    "parser": "babel-eslint",
+    "env": [
+      "mocha"
+    ]
+  }
+}
