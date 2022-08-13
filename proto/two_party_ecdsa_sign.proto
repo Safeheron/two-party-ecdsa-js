@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package two_party_ecdsa_sign;
+
+import "basic_type.proto";
+
+message Message1 {
+    string commitment_R1 = 1;
+}
+
+message Message2 {
+    basic_type.SchnorrProof proof_R2 = 1;
+}
+
+message Message3 {
+    basic_type.SchnorrProof proof_R1 = 1;
+    string blind = 2;
+}
+
+message Message4 {
+    string cypher3 = 1;
+}

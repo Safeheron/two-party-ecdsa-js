@@ -1,0 +1,6 @@
+pbjs --keep-case -t static-module -w commonjs basic_type.proto -o basic_type.js
+pbts -o basic_type.d.ts basic_type.js
+pbjs --keep-case -t static-module -w commonjs two_party_ecdsa_key_gen.proto -o two_party_ecdsa_key_gen.js
+pbts -o two_party_ecdsa_key_gen.d.ts two_party_ecdsa_key_gen.js
+pbjs --keep-case -t static-module -w commonjs two_party_ecdsa_sign.proto -o two_party_ecdsa_sign.js
+pbts -o two_party_ecdsa_sign.d.ts two_party_ecdsa_sign.js

@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package basic_type;
+
+message CurvePoint{
+    string x = 1;
+    string y = 2;
+    // Reserved segment
+    string curve = 3;
+}
+
+message PailPub{
+    string n = 1;
+    string g = 2;
+}
+
+message PailPriv{
+    string n = 1;
+    string lambda = 2;
+    string mu = 3;
+    string p = 4;
+    string q = 5;
+    string pSqr = 6;
+    string qSqr = 7;
+    string pMinus1 = 8;
+    string qMinus1 = 9;
+    string hp = 10;
+    string hq = 11;
+    string qInvP = 12;
+    string pInvQ = 13;
+}
+
+message SchnorrProof{
+    CurvePoint pk = 1;
+    CurvePoint g_r = 2;
+    string res = 3;
+}
+
+message KGD_Point{
+    CurvePoint point = 1;
+    string blindFactor = 2;
+}
+
+message PailProof{
+    repeated string yNArr = 1;
+}
+
+

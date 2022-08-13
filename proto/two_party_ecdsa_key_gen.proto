@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package two_party_ecdsa_key_gen;
+
+import "basic_type.proto";
+
+message Message1 {
+    string commitment_Q1 = 1;
+}
+
+message Message2 {
+    basic_type.SchnorrProof proof_Q2 = 1;
+}
+
+message Message3 {
+    basic_type.PailProof proof_pailN = 1;
+    string N = 2;
+    string cypher_x1 = 3;
+    basic_type.SchnorrProof proof_Q1 = 4;
+    string blind = 5;
+}
+
+message KeyShare1 {
+    string x1 = 1;
+    basic_type.CurvePoint Q = 2;
+    basic_type.PailPub pailPubKey = 3;
+    basic_type.PailPriv pailPrivKey = 4;
+}
+
+message KeyShare2 {
+    string x2 = 1;
+    basic_type.CurvePoint Q = 2;
+    basic_type.PailPub pailPubKey = 3;
+    string cypher_x1 = 4;
+}
