@@ -52,7 +52,7 @@ export class P2Context {
         const keyShare2 = KeyShare2.fromJsonObject(JSON.parse(keyShare2Json))
         // Sample k2 \in (0, 2^255]
         let k2 = await Rand.randomBNLt(Secp256k1.n)
-        while (k2.eqn(new BN(0))){
+        while (k2.eqn(0)){
             k2 = await Rand.randomBN(32)
         }
         // R2 = k2 * G

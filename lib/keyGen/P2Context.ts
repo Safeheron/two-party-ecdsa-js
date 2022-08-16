@@ -38,7 +38,7 @@ export class P2Context {
     public static async createContext(): Promise<P2Context> {
         // Sample x2 \in (0, 2^255]
         let x2 = await Rand.randomBNLt(Secp256k1.n)
-        while (x2.eqn(new BN(0))){
+        while (x2.eqn(0)){
             x2 = await Rand.randomBN(32)
         }
         // Q2 = x2 * G

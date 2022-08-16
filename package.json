@@ -17,7 +17,6 @@
     "type": "git",
     "url": "git@github.com:safeheron/two-party-ecdsa-js"
   },
-  "license": "Apache 2.0",
   "author": "Max<hejh1500@gmail.com>",
   "files": [
     "dist"
@@ -43,11 +42,11 @@
     "ts-node": "^10.7.0"
   },
   "dependencies": {
-    "@safeheron/crypto-commitment": "^0.1.2",
-    "@safeheron/crypto-paillier": "^0.9.0",
-    "@safeheron/crypto-rand": "^1.0.2",
-    "@safeheron/crypto-utils": "^1.0.0",
-    "@safeheron/crypto-zkp": "^1.0.3",
+    "@safeheron/crypto-commitment": "^1.0.0",
+    "@safeheron/crypto-paillier": "^1.0.0",
+    "@safeheron/crypto-rand": "^1.0.0",
+    "@safeheron/crypto-utils": "^1.0.1",
+    "@safeheron/crypto-zkp": "^1.0.0",
     "assert": "^2.0.0",
     "bn.js": "^5.2.1",
     "bs58check": "^2.1.2",
