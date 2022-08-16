@@ -2,7 +2,7 @@
 
 ## Install
 ```shell
-npm install --save two-party-ecdsa
+npm install --save @safeheron/two-party-ecdsa-js
 ```
 
 ## Usage
