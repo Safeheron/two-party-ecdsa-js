@@ -22,6 +22,5 @@ describe('2-Party Ecdsa:', async function () {
             console.error(e)
         }
         console.timeEnd('Key Generation')
-        this.timeout(20000)
     })
 })
