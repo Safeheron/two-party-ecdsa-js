@@ -151,3 +151,6 @@ s:
 v: 
  1
 ```
+
+## Warning
+This protocol does not implement zero-knowledge proofs and should not be used in a production environment.
