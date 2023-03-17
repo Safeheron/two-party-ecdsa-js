@@ -1,5 +1,7 @@
 # Two-Party-Ecdsa-JS
 
+<font color=red> This protocol does not implement zero-knowledge proofs and should not be used in a production environment. </font>
+
 ## Install
 ```shell
 npm install --save @safeheron/two-party-ecdsa-js
@@ -152,5 +154,3 @@ v:
  1
 ```
 
-## Warning
-<font color=red> This protocol does not implement zero-knowledge proofs and should not be used in a production environment. </font>
