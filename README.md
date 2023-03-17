@@ -1,6 +1,6 @@
 # Two-Party-Ecdsa-JS
 
-<font color=red> This protocol does not implement zero-knowledge proofs and should not be used in a production environment. </font>
+Warning: <font color=red> This protocol does not implement zero-knowledge proofs and should not be used in a production environment. </font>
 
 ## Install
 ```shell
