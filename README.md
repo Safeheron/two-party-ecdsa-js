@@ -153,4 +153,4 @@ v:
 ```
 
 ## Warning
-This protocol does not implement zero-knowledge proofs and should not be used in a production environment.
+<font color=red> This protocol does not implement zero-knowledge proofs and should not be used in a production environment. </font>
